@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 import { StoryGenerator } from "./pages/features/StoryGenerator";
 import { WorksheetGenerator } from "./pages/features/WorksheetGenerator";
 import SpeakingCoach from '@/pages/features/SpeakingCoach';
-import { VisualAidCreator } from "./pages/features/VisualAidCreator";
+import VisualAidCreator from "./pages/features/VisualAidCreator";
 import { ProgressTracker } from "./pages/features/ProgressTracker";
 import { LessonPlanGenerator } from "./pages/features/LessonPlanGenerator";
 import { DramaScripts } from "./pages/features/DramaScripts";
