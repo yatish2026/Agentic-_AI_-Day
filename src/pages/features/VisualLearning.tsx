@@ -5,6 +5,19 @@ import { Input } from "@/components/ui/input";
 import { Image, ArrowLeft, Eye, Play, Bot, Search, Send } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+
+interface VisualAid {
+  id: number;
+  title: string;
+  subject: string;
+  type: string;
+  description: string;
+  viewed: boolean;
+  hasVideo: boolean;
+  videoUrl?: string;
+  imageUrl?: string;
+}
+
 const visualAids = [
   {
     id: 1,
@@ -59,7 +72,7 @@ const visualAids = [
 
 export const VisualLearning = () => {
   const [aids, setAids] = useState(visualAids);
-  const [selectedAid, setSelectedAid] = useState<any>(null);
+const [selectedAid, setSelectedAid] = useState<VisualAid | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [showSentPopup, setShowSentPopup] = useState(false);
   const navigate = useNavigate();
