@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { StoryGenerator } from "./pages/features/StoryGenerator";
 import { WorksheetGenerator } from "./pages/features/WorksheetGenerator";
-import { SpeakingCoach } from "./pages/features/SpeakingCoach";
+import SpeakingCoach from '@/pages/features/SpeakingCoach';
 import { VisualAidCreator } from "./pages/features/VisualAidCreator";
 import { ProgressTracker } from "./pages/features/ProgressTracker";
 import { LessonPlanGenerator } from "./pages/features/LessonPlanGenerator";
@@ -34,7 +34,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/Agentic-_AI_-Day">
         <Routes>
           <Route path="/" element={<Index />} />
           
