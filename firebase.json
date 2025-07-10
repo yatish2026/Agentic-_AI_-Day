@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",  // or "build" based on your framework setup
+    "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
